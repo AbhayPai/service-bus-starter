@@ -1,0 +1,20 @@
+{
+  "name": "blog-service-bus",
+  "version": "1.0.0",
+  "description": "Serverless function created for blog service bus.",
+  "scripts": {
+    "start": "node ./web/index.js"
+  },
+  "author": "Abhay Pai",
+  "dependencies": {
+    "@azure/service-bus": "^7.5.1",
+    "@sendgrid/mail": "^7.6.0",
+    "axios": "^0.26.1",
+    "azure-sb": "^0.11.2",
+    "mysql2": "^2.3.3",
+    "twilio": "^3.72.0"
+  },
+  "devDependencies": {
+    "loadtest": "^5.2.0"
+  }
+}

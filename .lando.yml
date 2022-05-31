@@ -1,0 +1,24 @@
+name: blog-service-bus
+recipe: lamp
+config:
+  php: '7.4'
+  webroot: web/
+proxy:
+  appserver:
+    - blog-service-bus.lndo.site
+tooling:
+  "npm":
+    service: node
+    description: "Ex: lando npm <command>"
+services:
+  node:
+    type: node:14
+    build:
+      - "cd /app && npm install"
+  blog-service-bus:
+    type: mysql:5.7
+    portforward: true
+    config:
+      confd: lando/mysql/conf.d
+env_file:
+  - .env
