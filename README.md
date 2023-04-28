@@ -16,7 +16,7 @@ lando start
 ```
 3. Run Lando database import
 ```
-lando db-import file-name.sql.gz -h ictsidsnodejs
+lando db-import file-name.sql.gz -h blog-service-bus
 ```
 
 ## Kubernetes support for launching deployment
